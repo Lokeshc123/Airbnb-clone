@@ -12,10 +12,10 @@ function App() {
 
     // BEM
     <div className="app">
-      <Router>
+      <Router forceRefresh={true} >
         <Header />
         <Switch>
-          <Route exact  path= "/">
+          <Route exact path= "/">
             <Home />
           </Route>
           <Route path= "/search" >
